@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+}
+nav h2{
+    font-size: 40px;
+}
+li{
+    list-style: none;
+    font-weight: 500;
+    font-size: larger;
+    cursor: pointer;
+}
+li:hover{
+    color: blue;
+}
+ul{
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    gap: 20px;
+}
+.btn{
+    display: flex;
+    gap: 30px;
+}
+.tosh img{
+    height: 50vh;
+}
+.btn-1 button{
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+    padding: 10px;
+}
+.btn-2 button{
+    background-color: grey;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: larger;
+}
+.btn-2 button:hover{
+    background-color: black;
+    color: white;
+}
+.btn-3 button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: larger;
+}
+.btn-3 button:hover{
+    background-color: gray;
+    color: black;
+}
+.tech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+main{
+    padding-top: 40px;
+}
+.tech p{
+    font-size: large;
+}
+select{
+    padding: 5px 15px;
+}
+option{
+    margin-top: 5px 0;
+}
+.select{
+    padding: 20px;
+}
+.img{
+    display: flex;
+    padding: 20px 20px;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.img img{
+    height: 35vh;
+}
+footer{
+    background-color: black;
+    padding: 20px 40px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.tosh{
+    display: flex;
+    gap: 30px;
+    padding: 20px 50px;
+}
+.para p{
+    font-size: larger;
+}
+.about{
+    width: 100%;
+}
+.us p{
+    width: 90%;
+}
+.us{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mobile-nav{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 63px;
+
+}
+.mobile-nav ul li{
+    list-style: none;
+    font-size: larger;
+    color: blue;
+}
+.mobile-nav ul a{
+    text-decoration: none;
+
+} 
+.toggle button{
+    display: none;
+    padding: 5px 20px;
+    background: white;
+} 
+.mobile-nav button{
+    background-color: transparent;
+    border: none;
+    color: blue;
+    font-size: larger;
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width:950px) {
+   .mobile-nav{
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        gap: 30px;
+        width: 100%;
+        transition: all 1s ease;
+        align-items: center;
+    }
+    .mobile-nav ul{
+        color: blue;
+        text-decoration: none;
+    }
+    .display{
+        display: flex;
+        height: 70vh;
+        background-color: white;
+        position: absolute;
+        top:90px;
+        /* border-radius: 20px; */
+        /* left: 40px; */
+        padding: 20px 0;
+        width: 100%;
+    }
+    .mobile-nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .toggle button{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .img{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .img img{
+        height: 25vh;
+    }
+    footer{
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    
+}
+
